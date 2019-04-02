@@ -1,0 +1,36 @@
+<html>
+<body>
+<p>视频</p>
+<div id="div1">
+
+</div>
+<video style="position:fixed;top:10%;left:27%;width: 640px;height: 480px" controls="controls" id="aa" oncanplaythrough="myFunction(this)"></video>
+<input type="file" onchange="changeFile(this)">
+</body>
+<script>
+    function changeFile(ele) {
+        let video = ele.files[0];
+        let url = URL.createObjectURL(video);
+        console.log(url);
+        document.getElementById("aa").src = url;
+        document.getElementById("aa").style.display = "block"
+    }
+    // //获取读取我文件的File对象
+    // var selectedFile = document.getElementById('files').files[0];
+    // var name = selectedFile.name;//读取选中文件的文件名
+    // var size = selectedFile.size;//读取选中文件的大小
+    // console.log("文件名:" + name + "大小:" + size);
+    // let videoHtml = document.getElementById('video').innerHTML
+    // var r = videoHtml
+    // console.log(r)
+    // var reader = new FileReader();//这是核心,读取操作就是由它完成.
+    // reader.readAsDataURL(selectedFile);//读取文件的内容,也可以读取文件的URL
+    // reader.onload = function () {
+    //     //当读取完成后回调这个函数,然后此时文件的内容存储到了result中,直接操作即可
+    //     console.log(this.result);
+    //     console.log(document.getElementById('videoSource'))
+    // }
+    // console.log(param)
+
+</script>
+</html>
