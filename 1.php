@@ -1,5 +1,5 @@
 <?php
-header('Content-type: application/json8');
+header('Content-type: ');
 $data = array(
     'age' => 20,
     'name' => '123',
