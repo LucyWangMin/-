@@ -1,7 +1,7 @@
 <?php
 $data = array(
     'age' => 20,
-    'name' => 'ÕÅÈý',
+    'name' => '123',
 );
 
 $callback = $_GET['callback'];
